@@ -1,9 +1,9 @@
 @ECHO OFF
-set IPADDRESS=192.168.0.1
-set INTERVAL=600
+set IPADDRESS=xxx.xxx.x.x
+set INTERVAL=10
 :PINGINTERVAL
-ping %IPADDRESS% -n 1 >> logshome.txt
-echo Logged time = %time% %date%>> logshome.txt
+ping %IPADDRESS% -n 1 >> logs.txt
+echo Logged time = %time% %date%>> logs.txt
 ping %IPADDRESS% -n 1
 echo Logged time = %time% %date%
 timeout %INTERVAL%
